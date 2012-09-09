@@ -1,7 +1,7 @@
-require 'csv'
-require './csv_table'
+require "csv"
+require "./csv_table"
 
-cyclists = CSV.table('data/cyclists.csv')
+cyclists = CSV.table("data/cyclists.csv")
 
 cyclists.each do |cyclist|
   name = cyclist[:first_name]

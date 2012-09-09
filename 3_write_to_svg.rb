@@ -1,12 +1,12 @@
-require 'csv'
-require './csv_table'
+require "csv"
+require "./csv_table"
 
-cyclists = CSV.table('data/cyclists.csv')
+cyclists = CSV.table("data/cyclists.csv")
 
-puts '<html>'
-puts '<head><meta http-equiv="X-UA-Compatible" content="IE=9"></head>'
-puts '<body>'
-puts '<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="900" height="500">'
+puts "<html>"
+puts "<head><meta http-equiv='X-UA-Compatible' content='IE=9'></head>"
+puts "<body>"
+puts "<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='900' height='500'>"
 
 puts "<text x='0' y='290'>Age</text>"
 age = 10
@@ -32,6 +32,6 @@ cyclists.each do |cyclist|
   end
 end
 
-puts '</svg>'
-puts '</body>'
-puts '</html>'
+puts "</svg>"
+puts "</body>"
+puts "</html>"

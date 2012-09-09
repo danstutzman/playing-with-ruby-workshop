@@ -1,14 +1,14 @@
-puts '<html>'
-puts '<head><meta http-equiv="X-UA-Compatible" content="IE=9"></head>'
-puts '<body>'
-puts '<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="900" height="500">'
+puts "<html>"
+puts "<head><meta http-equiv='X-UA-Compatible' content='IE=9'></head>"
+puts "<body>"
+puts "<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='900' height='500'>"
 
 for outer_x in 1..10
   for outer_y in 1..10
     if (outer_x + outer_y) % 2 == 0
-      color = 'red'
+      color = "red"
     else
-      color = 'black'
+      color = "black"
     end
     
     xys = [
@@ -34,6 +34,6 @@ for outer_x in 1..10
   end
 end
 
-puts '</svg>'
-puts '</body>'
-puts '</html>'
+puts "</svg>"
+puts "</body>"
+puts "</html>"

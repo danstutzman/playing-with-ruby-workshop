@@ -1,7 +1,7 @@
-require 'csv'
-require './csv_table'
+require "csv"
+require "./csv_table"
 
-cyclists = CSV.table('data/cyclists.csv')
+cyclists = CSV.table("data/cyclists.csv")
 numerator = 0
 denominator = 0
 cyclists.each do |cyclist|

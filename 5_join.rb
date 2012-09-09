@@ -1,15 +1,15 @@
-require 'csv'
-require './csv_table'
+require "csv"
+require "./csv_table"
 
 bib_number_to_time = {}
-times = CSV.table('data/times.csv')
+times = CSV.table("data/times.csv")
 times.each do |row|
   bib_number = row[:bib_number]
   time = row[:time]
   bib_number_to_time[bib_number] = time
 end
 
-cyclists = CSV.table('data/cyclists.csv')
+cyclists = CSV.table("data/cyclists.csv")
 cyclists.each do |cyclist|
   name = cyclist[:first_name]
   bib_number = cyclist[:bib_number]

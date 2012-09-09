@@ -1,8 +1,8 @@
-require 'csv'
-require './csv_table'
+require "csv"
+require "./csv_table"
 
 age_to_cyclists = {}
-cyclists = CSV.table('data/cyclists.csv')
+cyclists = CSV.table("data/cyclists.csv")
 cyclists.each do |cyclist|
   age = cyclist[:racing_age]
   age_to_cyclists[age] ||= []
