@@ -1,4 +1,5 @@
 require 'csv'
+require './csv_table'
 
 cyclists = CSV.table('data/cyclists.csv')
 numerator = 0

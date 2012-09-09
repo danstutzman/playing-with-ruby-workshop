@@ -1,4 +1,5 @@
 require 'csv'
+require './csv_table'
 
 age_to_cyclists = {}
 cyclists = CSV.table('data/cyclists.csv')

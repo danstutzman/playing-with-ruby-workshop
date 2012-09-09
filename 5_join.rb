@@ -1,4 +1,5 @@
 require 'csv'
+require './csv_table'
 
 bib_number_to_time = {}
 times = CSV.table('data/times.csv')
