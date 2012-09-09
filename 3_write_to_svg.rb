@@ -6,7 +6,7 @@ cyclists = CSV.table("data/cyclists.csv")
 puts "<html>"
 puts "<head><meta http-equiv='X-UA-Compatible' content='IE=9'></head>"
 puts "<body>"
-puts "<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='900' height='500'>"
+puts "<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='950' height='500'>"
 
 puts "<text x='0' y='290'>Age</text>"
 age = 10
