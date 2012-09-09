@@ -3,14 +3,14 @@ require "./csv_table"
 
 age_to_cyclists = {}
 cyclists = CSV.table("data/cyclists.csv")
-cyclists.each do |cyclist|
+for cyclist in cyclists
   age = cyclist[:racing_age]
   age_to_cyclists[age] ||= []
   age_to_cyclists[age].push(cyclist)
 end
 
 ages = age_to_cyclists.keys
-ages.sort.each do |age|
+for age in ages.sort
   cyclists_this_age = age_to_cyclists[age]
   puts "#{cyclists_this_age.size} cyclists were #{age} years old."
   cyclists_this_age.each do |cyclist|

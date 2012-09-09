@@ -4,7 +4,7 @@ require "./csv_table"
 cyclists = CSV.table("data/cyclists.csv")
 numerator = 0
 denominator = 0
-cyclists.each do |cyclist|
+for cyclist in cyclists
   numerator += cyclist[:racing_age]
   denominator += 1
 end

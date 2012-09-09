@@ -7,7 +7,7 @@ puts "<html>"
 puts "<body>"
 
 puts "<ul>"
-cyclists.each do |cyclist|
+for cyclist in cyclists
   name = cyclist[:first_name]
   age = cyclist[:racing_age]
 

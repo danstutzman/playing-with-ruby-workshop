@@ -24,7 +24,7 @@ while bib_number <= 160
   bib_number += 10
 end
 
-cyclists.each do |cyclist|
+for cyclist in cyclists
   if cyclist[:racing_age]
     x = (cyclist[:bib_number] * 5) + 30
     y = cyclist[:racing_age] * 5

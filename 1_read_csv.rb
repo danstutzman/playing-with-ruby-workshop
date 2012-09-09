@@ -3,7 +3,7 @@ require "./csv_table"
 
 cyclists = CSV.table("data/cyclists.csv")
 
-cyclists.each do |cyclist|
+for cyclist in cyclists
   name = cyclist[:first_name]
   age = cyclist[:racing_age]
 
