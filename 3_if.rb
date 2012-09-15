@@ -13,7 +13,7 @@ for cyclist in cyclists
   num = cyclist[:bib_number]
   age = cyclist[:racing_age]
 
-  if cyclist[:has_photo] == 'TRUE'
+  if cyclist[:has_photo] == "TRUE"
     puts "<div style='width:110px;height:160px;float:left'>"
     puts "<a href='#{url}'>#{name}</a> (#{age})<br/>"
     puts "<img src='photos/#{num}.jpeg'/>"
